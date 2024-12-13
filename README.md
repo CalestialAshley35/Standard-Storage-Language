@@ -109,17 +109,75 @@ Enter a command (store or see) or 'exit' to quit: exit
 ## Requirements
 - A C++ compiler that supports C++17 or higher (for `std::variant`).
 
-## Compilation
-
-To compile the program, use the following command (assuming the source code is saved in `standard_storage.cpp`):
+## **Compiling and Running the C++ Program**
 
 ```bash
+### **1. On Linux **
+
+# Step 1: Install Dependencies
+pkg install clang
+pkg install g++
+
+# Step 2: Create a Folder for the Project
+mkdir main
+cd main
+
+# Step 3: Download the C++ File
+wget https://raw.githubusercontent.com/CalestialAshley35/Standard-Storage-Language/refs/heads/main/main/standard_storage.cpp
+
+# Step 4: Compile the Program
 g++ -std=c++17 -o standard_storage standard_storage.cpp
 
-## License
+# Step 5: Run the Program
+./standard_storage
 
-This project is released under the MIT License.
+The program will prompt you to enter a command like store, see, or exit.
+```
 
-## Contributing
+---
 
-Feel free to submit issues and pull requests for improvements or bug fixes.
+2. On Windows (Code::Blocks)
+
+```bash
+# Step 1: Install Code::Blocks
+# Download and install Code::Blocks from http://www.codeblocks.org/downloads/26.
+# Make sure to select the version that includes MinGW (C++ compiler).
+
+# Step 2: Open Code::Blocks
+# - Open Code::Blocks, then create a new project by selecting `File > New > Project...` 
+# - Choose the `Console Application` template, and follow the prompts.
+
+# Step 3: Add the C++ File
+# - Download the `standard_storage.cpp` file from the GitHub repository.
+# - In Code::Blocks, right-click on the project folder in the left sidebar and choose `Add files...` to add the `standard_storage.cpp` file.
+
+# Step 4: Compile the Program
+# - Click the **Build** button (the gear icon) or press `Ctrl+F9` to compile the program.
+
+# Step 5: Run the Program
+# - Click the **Run** button (the green play icon) or press `Ctrl+F10` to run the program.
+# The program will prompt for input like `store`, `see`, or `exit`.```
+---
+```
+
+3. On macOS
+
+```
+# Step 1: Install Xcode Command Line Tools
+# Ensure you have `g++` installed by running:
+xcode-select --install
+
+# Step 2: Create a Folder for the Project
+mkdir main
+cd main
+
+# Step 3: Download the C++ File
+curl -O https://raw.githubusercontent.com/CalestialAshley35/Standard-Storage-Language/refs/heads/main/main/standard_storage.cpp
+
+# Step 4: Compile the Program
+g++ -std=c++17 -o standard_storage standard_storage.cpp
+
+# Step 5: Run the Program
+./standard_storage
+
+The program will prompt you to enter a command like store, see, or exit.
